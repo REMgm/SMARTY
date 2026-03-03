@@ -74,6 +74,6 @@ SECTION 6: NOTES
   _______________________________________________________________
 
 ================================================================
-INTERNAL ROUTING: Complete → Monks MarTech AI team review
+INTERNAL ROUTING: Complete → MarTech AI team review
 Pin: AR0A-INTAKE-v1 | Status: Active
 ================================================================

@@ -5,7 +5,7 @@ One-Pager | External Outreach
 
 WHAT IS AR0A?
 
-AR0A is Monks' structured methodology for taking enterprise clients
+AR0A is a structured methodology for taking enterprise clients
 from zero architectural understanding to full MarTech activation.
 It eliminates the discovery paralysis that stalls transformation
 programs and replaces it with a rapid, auditable pipeline.
@@ -19,15 +19,15 @@ and execution is where transformation programs die.
 
 THE AR0A APPROACH
 
-Phase 0 — Intake & Mapping (Week 1–2)
+Phase 0 — Intake & Mapping (Hour 1–2)
   Structured intake form captures current stack, pain points,
   business objectives, and readiness signals.
 
-Phase 1 — Architecture Blueprint (Week 2–4)
+Phase 1 — Architecture Blueprint (Hour 2–4)
   SMARTY architecture is configured to the client's ecosystem.
   Composable components are selected, integration points mapped.
 
-Phase 2 — Activation Sprint (Week 4–8)
+Phase 2 — Activation Sprint (Hour 4–8)
   First workloads go live. Agentic AI workflows deployed.
   Measurement loops established. Quick wins delivered.
 
@@ -37,7 +37,7 @@ Phase 3 — Optimization & Scale (Ongoing)
 
 KEY DIFFERENTIATORS
 
-  • Speed: 8 weeks from intake to live activation (vs. 6+ months industry average)
+  • Speed: 8 hours from intake to live activation (vs. 6+ months industry average)
   • Composable: No monoliths. API-first. Swap any component without breaking the system.
   • AI-native: Agentic workflows from Day 1, not bolted on later.
   • Auditable: Every decision tracked via Pins system — full traceability.
@@ -52,7 +52,7 @@ CONTACT
 
 Remco Vroom
 Head of MarTech AI Transformation & CX-Performance
-Monks | remco.vroom@monks.com
+remco.vroom@monks.com
 
 ================================================================
 Pin: AR0A-ONEPAGER-v1 | Status: Active | Pinned Section: Yes

@@ -1,7 +1,7 @@
 # SMARTY Architecture — Narrative Overview
 
 **Version:** 1.0
-**Author:** Remco Vroom, Head of MarTech AI Transformation & CX-Performance, Monks
+**Author:** Remco Vroom, Head of MarTech AI Transformation & CX-Performance
 **Date:** 2026-03-03
 **Classification:** Internal / Partner-Ready
 
@@ -9,7 +9,7 @@
 
 ## 1. Purpose
 
-SMARTY (Strategic MarTech Architecture for Real-Time Yield) is the operational backbone for Monks' AI-first marketing ecosystem. It bridges the gap between technology's potential and real-world execution — enabling enterprise clients to achieve measurable 6–12 month market leadership advantages through composable tech stacks, automation, and intelligent experience design.
+SMARTY (Strategic MarTech Architecture for Real-Time Yield) is the operational backbone for AI-first marketing ecosystems. It bridges the gap between technology's potential and real-world execution — enabling enterprise clients to achieve measurable 6–12 month market leadership advantages through composable tech stacks, automation, and intelligent experience design.
 
 ## 2. Design Principles
 
@@ -43,7 +43,7 @@ Strategic decisions and architectural waypoints are tracked via the Pins system 
 
 ## 6. Branding Alignment
 
-All SMARTY artifacts follow Monks 4.0 brand guidelines — dark theme, modern typography, and the strategic positioning of AI-first transformation leadership.
+All SMARTY artifacts follow the established brand guidelines — dark theme, modern typography, and the strategic positioning of AI-first transformation leadership.
 
 ---
 
