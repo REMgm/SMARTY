@@ -1,18 +1,8 @@
 {
-  "version": 2,
-  "name": "smarty-architecture",
-  "builds": [
-    { "src": "**/*.html", "use": "@vercel/static" },
-    { "src": "**/*.md", "use": "@vercel/static" },
-    { "src": "**/*.txt", "use": "@vercel/static" },
-    { "src": "**/*.svg", "use": "@vercel/static" },
-    { "src": "**/*.jpg", "use": "@vercel/static" },
-    { "src": "**/*.png", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/arch", "dest": "/architecture.html" },
-    { "src": "/pins", "dest": "/memory/pins.md" }
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/arch", "destination": "/architecture.html" },
+    { "source": "/pins", "destination": "/memory/pins.md" }
   ],
   "headers": [
     {
