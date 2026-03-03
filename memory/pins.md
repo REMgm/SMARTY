@@ -13,7 +13,7 @@
 | AR0A-ONEPAGER-v1 | AR0A external one-pager finalized | Active | 2026-03-03 | Remco Vroom |
 | AR0A-INTAKE-v1 | AR0A intake form (internal) ready | Active | 2026-03-03 | Remco Vroom |
 | AR0A-SLIDES-v1 | AR0A slide deck outline drafted | Draft | 2026-03-03 | Remco Vroom |
-| MONKS40-BRAND-v1 | Monks 4.0 branding applied to SMARTY | Active | 2026-03-03 | Remco Vroom |
+| SMARTY-BRAND-v1 | SMARTY branding applied | Active | 2026-03-03 | Remco Vroom |
 | DEPLOY-GHPAGES-v1 | GitHub Pages deployment configured | Pending | 2026-03-03 | Dev Team |
 | DEPLOY-VERCEL-v1 | Vercel deployment configured | Pending | 2026-03-03 | Dev Team |
 

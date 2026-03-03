@@ -1,21 +1,21 @@
 # SMARTY — Strategic MarTech Architecture for Real-Time Yield
 
-> Monks | AI-First MarTech Transformation & CX-Performance
+> AI-First MarTech Transformation & CX-Performance
 
 ---
 
 ## What is this?
 
-SMARTY is the operational architecture powering Monks' AI-first marketing ecosystems. This repo contains the published architecture narrative, AR0A readiness artifacts, branding assets, and deployment tooling.
+SMARTY is the operational architecture powering AI-first marketing ecosystems. This repo contains the published architecture narrative, AR0A readiness artifacts, branding assets, and deployment tooling.
 
 ## Repo Structure
 
 ```
 SMARTY/
   architecture.md          # Narrative architecture (Markdown)
-  architecture.html        # Branded web page (Monks dark theme)
+  architecture.html        # Branded web page (dark theme)
   index.html               # Landing redirect → architecture.html
-  logo.jpg                 # Monks branding asset (add manually)
+  logo.jpg                 # Branding asset (add manually)
   README.md                # This file
   vercel.json              # Vercel static hosting config
   vercel-deploy.sh         # Vercel deploy script (loads token from secrets)
@@ -28,12 +28,12 @@ SMARTY/
   memory/
     pins.md                # Pins ledger (strategic decisions)
     strategy/
-      monks4.0_v1.md       # Monks 4.0 brand & strategy alignment
+      monks4.0_v1.md       # Brand & strategy alignment
 ```
 
 ## Branding
 
-- **Theme:** Monks 4.0 dark — deep navy (#0a0a0f), electric purple (#6c5ce7), teal accents (#00cec9)
+- **Theme:** SMARTY dark — deep navy (#0a0a0f), electric purple (#6c5ce7), teal accents (#00cec9)
 - **Typography:** Inter (Google Fonts)
 - **Logo:** Place `logo.jpg` in repo root. Uncomment the `<img>` tag in `architecture.html` header.
 
@@ -80,4 +80,4 @@ Strategic decisions tracked in `memory/pins.md`. Pins feed the 21:00 daily diges
 
 ---
 
-*Monks | MarTech AI Transformation & CX-Performance*
+*SMARTY | MarTech AI Transformation & CX-Performance*

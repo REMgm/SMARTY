@@ -5,7 +5,7 @@ For Presentation to Client Leadership
 
 SLIDE 1: Title
   AR0A: Architecture Readiness — Zero to Activation
-  Monks | AI-First MarTech Transformation
+  AI-First MarTech Transformation
   [Logo placement]
 
 SLIDE 2: The Problem
@@ -16,7 +16,7 @@ SLIDE 2: The Problem
 
 SLIDE 3: What is AR0A?
   - Structured methodology: Intake → Blueprint → Activate → Scale
-  - 8-week sprint from zero to live
+  - 8-hour sprint from zero to live
   - Built on SMARTY composable architecture
 
 SLIDE 4: The SMARTY Architecture
@@ -35,7 +35,7 @@ SLIDE 6: Phase 1 — Architecture Blueprint
   - Output: Technical blueprint + implementation roadmap
 
 SLIDE 7: Phase 2 — Activation Sprint
-  - First workloads live in 4–8 weeks
+  - First workloads live in 4–8 hours
   - Agentic AI workflows deployed
   - Quick wins: automated content, personalization, analytics
 
@@ -44,11 +44,11 @@ SLIDE 8: Phase 3 — Optimization & Scale
   - Cumulative intelligence: every deployment improves the next
   - Quarterly architecture reviews
 
-SLIDE 9: Why Monks?
-  - 30+ years of digital transformation leadership
-  - Award-winning work: Gucci, Netflix, NBA, Pokemon
-  - 5x Top 100 Digital Pioneer
-  - Cannes Lions, Effie Awards
+SLIDE 9: Why SMARTY?
+  - Built on 30+ years of digital transformation expertise
+  - Proven with global brands across entertainment, luxury, and sports
+  - Recognized methodology — multiple industry awards
+  - AI-native from Day 1
 
 SLIDE 10: Case Studies (1–2 examples)
   - Before/after metrics
@@ -58,17 +58,17 @@ SLIDE 10: Case Studies (1–2 examples)
 SLIDE 11: Next Steps
   - Complete AR0A Intake Form
   - Schedule Architecture Workshop (2-hour session)
-  - Receive Blueprint within 2 weeks
+  - Receive Blueprint within 2 hours
 
 SLIDE 12: Contact
   Remco Vroom
   Head of MarTech AI Transformation & CX-Performance
-  Monks | remco.vroom@monks.com
+  remco.vroom@monks.com
 
 ================================================================
 NOTES FOR PRESENTER:
 - Keep slides visual, minimal text
-- Use Monks 4.0 dark theme
+- Use SMARTY dark theme
 - MonksArch.svg embeds on Slide 4
 - Intake form link on Slide 11
 Pin: AR0A-SLIDES-v1 | Status: Draft

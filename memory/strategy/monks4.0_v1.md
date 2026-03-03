@@ -1,4 +1,4 @@
-# Monks 4.0 — Strategic Brand & Architecture Alignment
+# SMARTY — Strategic Brand & Architecture Alignment
 
 **Version:** 1.0
 **Date:** 2026-03-03
@@ -7,7 +7,7 @@
 
 ## Brand Identity
 
-Monks 4.0 represents the evolution from digital agency to AI-first transformation partner. The brand signals technical depth, strategic authority, and operational excellence.
+SMARTY represents the evolution from traditional MarTech to AI-first transformation. The brand signals technical depth, strategic authority, and operational excellence.
 
 ### Visual System
 - **Primary palette:** Deep navy/black (#0a0a0f), Electric purple (#6c5ce7), Soft lavender (#a29bfe)
@@ -25,7 +25,7 @@ Monks 4.0 represents the evolution from digital agency to AI-first transformatio
 ### Active Strategic Pins
 - **SMARTY-ARCH-v1:** Core architecture published and branded
 - **AR0A-ONEPAGER-v1:** External positioning locked
-- **MONKS40-BRAND-v1:** Brand system applied across all SMARTY artifacts
+- **SMARTY-BRAND-v1:** Brand system applied across all SMARTY artifacts
 
 ### Pending
 - **DEPLOY-GHPAGES-v1:** Awaiting GitHub Pages go-live
@@ -33,7 +33,7 @@ Monks 4.0 represents the evolution from digital agency to AI-first transformatio
 
 ## Architecture Integration
 
-All SMARTY outputs follow Monks 4.0 standards:
+All SMARTY outputs follow the established brand standards:
 - Dark theme in all HTML/web assets
 - Pin IDs referenced in every document footer
 - Branding header/footer in architecture.html
@@ -41,12 +41,12 @@ All SMARTY outputs follow Monks 4.0 standards:
 
 ## Competitive Positioning
 
-SMARTY + AR0A positions Monks as the only partner delivering:
-1. 8-week intake-to-activation (vs. 6-month industry average)
+SMARTY + AR0A delivers:
+1. 8-hour intake-to-activation (vs. 6-month industry average)
 2. Composable, vendor-agnostic architecture
 3. Agentic AI from Day 1 (not bolted on)
 4. Full decision traceability via Pins
 
 ---
 
-*Pin: MONKS40-BRAND-v1 | Status: Active*
+*Pin: SMARTY-BRAND-v1 | Status: Active*
