@@ -1,0 +1,79 @@
+================================================================
+AR0A — Architecture Readiness Intake Form
+Internal Use | Pre-Engagement Qualification
+================================================================
+
+SECTION 1: CLIENT PROFILE
+
+  Company Name: _______________________________________________
+  Industry: ___________________________________________________
+  Annual Revenue (approx): ____________________________________
+  Primary Contact: ____________________________________________
+  Title / Role: _______________________________________________
+  Email: ______________________________________________________
+
+SECTION 2: CURRENT STATE
+
+  2.1 Primary MarTech platforms in use (check all that apply):
+      [ ] Adobe Experience Cloud (AEM, AEP, Analytics, Target)
+      [ ] Salesforce (Marketing Cloud, Data Cloud, Commerce)
+      [ ] AWS (native services, SageMaker, Kinesis)
+      [ ] Google Marketing Platform
+      [ ] HubSpot
+      [ ] Custom / proprietary systems
+      [ ] Other: ______________________________________________
+
+  2.2 Current CDP or data unification approach:
+      ___________________________________________________________
+
+  2.3 Number of customer touchpoints managed:
+      [ ] < 5   [ ] 5–15   [ ] 15–50   [ ] 50+
+
+  2.4 Current AI/ML capabilities in production:
+      [ ] None   [ ] Experimental   [ ] Partial   [ ] Scaled
+
+SECTION 3: PAIN POINTS
+
+  3.1 Top 3 operational challenges:
+      1. ________________________________________________________
+      2. ________________________________________________________
+      3. ________________________________________________________
+
+  3.2 Estimated time from campaign concept to live (current):
+      [ ] < 1 week  [ ] 1–4 weeks  [ ] 1–3 months  [ ] 3+ months
+
+  3.3 Data silos present?  [ ] Yes  [ ] No  [ ] Unknown
+
+SECTION 4: OBJECTIVES
+
+  4.1 Primary business objective for this engagement:
+      [ ] Revenue growth
+      [ ] Cost reduction / efficiency
+      [ ] Customer experience improvement
+      [ ] Speed-to-market acceleration
+      [ ] Competitive differentiation
+      [ ] Other: ______________________________________________
+
+  4.2 Target timeline for first activation:
+      [ ] 4 weeks  [ ] 8 weeks  [ ] 12 weeks  [ ] Flexible
+
+  4.3 Budget range (implementation + first year):
+      [ ] < $250K  [ ] $250K–$1M  [ ] $1M–$5M  [ ] $5M+
+
+SECTION 5: READINESS SIGNALS
+
+  5.1 Executive sponsor identified?  [ ] Yes  [ ] No
+  5.2 Technical team available for integration?  [ ] Yes  [ ] No
+  5.3 Existing vendor contracts that constrain choices?
+      ___________________________________________________________
+
+SECTION 6: NOTES
+
+  _______________________________________________________________
+  _______________________________________________________________
+  _______________________________________________________________
+
+================================================================
+INTERNAL ROUTING: Complete → Monks MarTech AI team review
+Pin: AR0A-INTAKE-v1 | Status: Active
+================================================================
