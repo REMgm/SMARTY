@@ -1,0 +1,67 @@
+// SMARTY Architecture — Graphviz Diagram
+// Render: dot -Tsvg MonksArch.dot -o MonksArch.svg
+
+digraph SMARTY {
+  rankdir=TB;
+  bgcolor="#0a0a0f";
+  node [shape=box, style="filled,rounded", fontname="Inter", fontsize=11, fontcolor="#f0f0f5", color="#2a2a3a"];
+  edge [color="#6c5ce7", fontname="Inter", fontsize=9, fontcolor="#9898a8"];
+
+  // Layer 1 — Data
+  subgraph cluster_data {
+    label="Layer 1 — Data Orchestration";
+    labeljust="l"; fontname="Inter"; fontsize=13; fontcolor="#a29bfe"; color="#2a2a3a"; style="rounded";
+    CDP [label="CDP\n(Adobe / Salesforce)", fillcolor="#1a1a26"];
+    Events [label="Event Streaming\n(Kinesis / EventBridge)", fillcolor="#1a1a26"];
+    Identity [label="Identity\nResolution", fillcolor="#1a1a26"];
+  }
+
+  // Layer 2 — AI
+  subgraph cluster_ai {
+    label="Layer 2 — AI Engine";
+    labeljust="l"; fontname="Inter"; fontsize=13; fontcolor="#a29bfe"; color="#2a2a3a"; style="rounded";
+    LLM [label="LLM Content\nPipelines", fillcolor="#1a1a26"];
+    Predict [label="Predictive\nAnalytics", fillcolor="#1a1a26"];
+    ABTest [label="Automated\nA/B Testing", fillcolor="#1a1a26"];
+    Personalize [label="Personalization\nEngine", fillcolor="#1a1a26"];
+  }
+
+  // Layer 3 — Experience
+  subgraph cluster_cx {
+    label="Layer 3 — Experience Delivery";
+    labeljust="l"; fontname="Inter"; fontsize=13; fontcolor="#a29bfe"; color="#2a2a3a"; style="rounded";
+    CMS [label="Headless CMS\n(AEM)", fillcolor="#1a1a26"];
+    Commerce [label="Commerce\nPlatform", fillcolor="#1a1a26"];
+    MarAuto [label="Marketing\nAutomation (SFMC)", fillcolor="#1a1a26"];
+  }
+
+  // Layer 4 — Measurement
+  subgraph cluster_measure {
+    label="Layer 4 — Measurement & Optimization";
+    labeljust="l"; fontname="Inter"; fontsize=13; fontcolor="#00cec9"; color="#2a2a3a"; style="rounded";
+    Attribution [label="Attribution\nModeling", fillcolor="#1a1a26"];
+    Dashboards [label="Real-Time\nDashboards", fillcolor="#1a1a26"];
+    Optimize [label="Optimization\nLoops", fillcolor="#1a1a26"];
+  }
+
+  // Flows
+  CDP -> LLM;
+  CDP -> Predict;
+  Events -> ABTest;
+  Identity -> Personalize;
+
+  LLM -> CMS;
+  Predict -> MarAuto;
+  ABTest -> Commerce;
+  Personalize -> CMS;
+  Personalize -> MarAuto;
+
+  CMS -> Attribution;
+  Commerce -> Dashboards;
+  MarAuto -> Dashboards;
+
+  // Feedback loop
+  Optimize -> CDP [label="feedback", style=dashed, color="#00cec9"];
+  Attribution -> Optimize;
+  Dashboards -> Optimize;
+}

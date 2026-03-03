@@ -1,0 +1,75 @@
+================================================================
+AR0A — Slide Deck Outline (Google Docs / Slides)
+For Presentation to Client Leadership
+================================================================
+
+SLIDE 1: Title
+  AR0A: Architecture Readiness — Zero to Activation
+  Monks | AI-First MarTech Transformation
+  [Logo placement]
+
+SLIDE 2: The Problem
+  "Most enterprises spend 6+ months in discovery before
+   any technology ships."
+  - Stats: avg. time-to-value, budget burn rate, competitor gap
+  - Visual: timeline comparison (traditional vs. AR0A)
+
+SLIDE 3: What is AR0A?
+  - Structured methodology: Intake → Blueprint → Activate → Scale
+  - 8-week sprint from zero to live
+  - Built on SMARTY composable architecture
+
+SLIDE 4: The SMARTY Architecture
+  - 4-layer diagram: Data → AI → Experience → Measurement
+  - API-first, composable, vendor-agnostic
+  - Reference: MonksArch.svg diagram
+
+SLIDE 5: Phase 0 — Intake & Mapping
+  - Structured intake captures current state + objectives
+  - Readiness scoring (automated)
+  - Output: Architecture gap analysis
+
+SLIDE 6: Phase 1 — Architecture Blueprint
+  - SMARTY configured to client ecosystem
+  - Component selection, integration mapping
+  - Output: Technical blueprint + implementation roadmap
+
+SLIDE 7: Phase 2 — Activation Sprint
+  - First workloads live in 4–8 weeks
+  - Agentic AI workflows deployed
+  - Quick wins: automated content, personalization, analytics
+
+SLIDE 8: Phase 3 — Optimization & Scale
+  - Continuous measurement loops
+  - Cumulative intelligence: every deployment improves the next
+  - Quarterly architecture reviews
+
+SLIDE 9: Why Monks?
+  - 30+ years of digital transformation leadership
+  - Award-winning work: Gucci, Netflix, NBA, Pokemon
+  - 5x Top 100 Digital Pioneer
+  - Cannes Lions, Effie Awards
+
+SLIDE 10: Case Studies (1–2 examples)
+  - Before/after metrics
+  - Architecture diagram (simplified)
+  - Client testimonial or quote
+
+SLIDE 11: Next Steps
+  - Complete AR0A Intake Form
+  - Schedule Architecture Workshop (2-hour session)
+  - Receive Blueprint within 2 weeks
+
+SLIDE 12: Contact
+  Remco Vroom
+  Head of MarTech AI Transformation & CX-Performance
+  Monks | remco.vroom@monks.com
+
+================================================================
+NOTES FOR PRESENTER:
+- Keep slides visual, minimal text
+- Use Monks 4.0 dark theme
+- MonksArch.svg embeds on Slide 4
+- Intake form link on Slide 11
+Pin: AR0A-SLIDES-v1 | Status: Draft
+================================================================

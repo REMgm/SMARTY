@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMARTY Architecture | Monks</title>
+<style>
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #1a1a26;
+    --accent: #6c5ce7;
+    --accent-light: #a29bfe;
+    --accent-glow: rgba(108, 92, 231, 0.15);
+    --text-primary: #f0f0f5;
+    --text-secondary: #9898a8;
+    --text-muted: #6a6a7a;
+    --border: #2a2a3a;
+    --success: #00cec9;
+    --warning: #fdcb6e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0;
+    position: sticky; top: 0;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  .header-inner { display: flex; justify-content: space-between; align-items: center; }
+  .logo-area { display: flex; align-items: center; gap: 1rem; }
+  .logo-area img { height: 36px; border-radius: 4px; }
+  .logo-area .brand { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--text-muted); }
+  .logo-area .product { font-size: 1.1rem; font-weight: 700; color: var(--accent-light); }
+  .header-meta { font-size: 0.75rem; color: var(--text-muted); text-align: right; }
+
+  /* Hero */
+  .hero {
+    padding: 5rem 0 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, var(--accent-glow) 0%, transparent 60%);
+  }
+  .hero h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 1rem; }
+  .hero h1 span { color: var(--accent-light); }
+  .hero .subtitle { font-size: 1.15rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; }
+
+  /* Section */
+  section { padding: 3.5rem 0; }
+  section + section { border-top: 1px solid var(--border); }
+  h2 {
+    font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  h2 .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 8px;
+    background: var(--accent); color: #fff; font-size: 0.85rem; font-weight: 700;
+  }
+  p { margin-bottom: 1rem; color: var(--text-secondary); }
+
+  /* Layer Cards */
+  .layers { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 1.5rem; }
+  .layer-card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.5rem 1.75rem; transition: border-color 0.2s;
+  }
+  .layer-card:hover { border-color: var(--accent); }
+  .layer-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); }
+  .layer-card .tag {
+    display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--accent-light); background: var(--accent-glow); padding: 0.2rem 0.6rem;
+    border-radius: 4px; margin-bottom: 0.75rem;
+  }
+  .layer-card p { font-size: 0.95rem; margin-bottom: 0; }
+
+  /* Principles */
+  .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .principle {
+    background: var(--bg-secondary); border-radius: 10px; padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--accent);
+  }
+  .principle strong { display: block; margin-bottom: 0.35rem; color: var(--text-primary); }
+  .principle p { font-size: 0.9rem; margin-bottom: 0; }
+
+  /* AR0A Timeline */
+  .timeline { margin-top: 1.5rem; }
+  .phase {
+    display: flex; gap: 1.5rem; padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .phase:last-child { border-bottom: none; }
+  .phase-marker {
+    flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent-glow); border: 2px solid var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.85rem; color: var(--accent-light);
+  }
+  .phase-content h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .phase-content .timing { font-size: 0.8rem; color: var(--success); margin-bottom: 0.35rem; }
+  .phase-content p { font-size: 0.9rem; margin-bottom: 0; }
+
+  /* Pins */
+  .pin-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px;
+    padding: 0.3rem 0.7rem; font-size: 0.8rem; color: var(--warning); margin: 0.25rem;
+  }
+  .pin-badge::before { content: "\1F4CC"; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border); padding: 2.5rem 0; margin-top: 2rem;
+    text-align: center; color: var(--text-muted); font-size: 0.8rem;
+  }
+  footer .monks-mark { font-size: 1rem; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 2rem; }
+    .hero .subtitle { font-size: 1rem; }
+    .container { padding: 0 1.25rem; }
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo-area">
+      <!-- <img src="logo.jpg" alt="Monks"> -->
+      <div>
+        <div class="brand">Monks</div>
+        <div class="product">SMARTY Architecture</div>
+      </div>
+    </div>
+    <div class="header-meta">v1.0 &middot; 2026-03-03<br>MarTech AI Transformation</div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <h1>Strategic MarTech Architecture<br>for <span>Real-Time Yield</span></h1>
+    <p class="subtitle">AI-first marketing ecosystems that enable enterprise clients to leapfrog the competition &mdash; creating measurable 6&ndash;12 month market leadership advantages.</p>
+  </div>
+</div>
+
+<main class="container">
+
+  <section>
+    <h2><span class="num">1</span> Design Principles</h2>
+    <div class="principles">
+      <div class="principle"><strong>Outcome-Obsessed</strong><p>Every component maps to a business KPI. If it doesn't drive value, it's out.</p></div>
+      <div class="principle"><strong>Composable by Default</strong><p>API-first across Adobe, Salesforce, and AWS. No monoliths, no vendor lock-in.</p></div>
+      <div class="principle"><strong>Agentic AI at Core</strong><p>Autonomous workflows for content, media, campaigns, and real-time personalization.</p></div>
+      <div class="principle"><strong>Flip-Thinking Native</strong><p>Every assumption gets challenged. Architecture designed to be reframed from multiple angles.</p></div>
+      <div class="principle"><strong>Cumulative Intelligence</strong><p>Every deployment, every data point feeds back. Nothing is wasted.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Architecture Layers</h2>
+    <div class="layers">
+      <div class="layer-card">
+        <div class="tag">Foundation</div>
+        <h3>Layer 1 &mdash; Data Orchestration</h3>
+        <p>Real-time data ingestion and unification. CDP integration (Adobe Real-Time CDP / Salesforce Data Cloud), event streaming (AWS Kinesis / EventBridge), and identity resolution.</p>
+      </div>
+      <div class="layer-card">
+        <div class="tag">Intelligence</div>
+        <h3>Layer 2 &mdash; AI Engine</h3>
+        <p>Agentic AI workflows: LLM content pipelines, predictive analytics, automated A/B testing, and personalization engines.</p>
+      </div>
+      <div class="layer-card">
+        <div class="tag">Execution</div>
+        <h3>Layer 3 &mdash; Experience Delivery</h3>
+        <p>Composable CX: headless CMS, commerce, marketing automation. Adobe Experience Manager, Salesforce Marketing Cloud, custom micro-frontends.</p>
+      </div>
+      <div class="layer-card">
+        <div class="tag">Feedback Loop</div>
+        <h3>Layer 4 &mdash; Measurement &amp; Optimization</h3>
+        <p>Attribution modeling, real-time dashboards, continuous optimization. Every touchpoint feeds back into Layer 1.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> AR0A &mdash; Zero to Activation</h2>
+    <p>AR0A is the structured methodology that takes clients from zero architectural understanding to full activation in 8 weeks.</p>
+    <div class="timeline">
+      <div class="phase">
+        <div class="phase-marker">0</div>
+        <div class="phase-content">
+          <h4>Intake &amp; Mapping</h4>
+          <div class="timing">Week 1&ndash;2</div>
+          <p>Structured intake captures current stack, pain points, objectives. Readiness scoring automated.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-marker">1</div>
+        <div class="phase-content">
+          <h4>Architecture Blueprint</h4>
+          <div class="timing">Week 2&ndash;4</div>
+          <p>SMARTY configured to client ecosystem. Component selection, integration mapping, technical blueprint.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-marker">2</div>
+        <div class="phase-content">
+          <h4>Activation Sprint</h4>
+          <div class="timing">Week 4&ndash;8</div>
+          <p>First workloads live. Agentic AI deployed. Measurement loops established. Quick wins delivered.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-marker">3</div>
+        <div class="phase-content">
+          <h4>Optimization &amp; Scale</h4>
+          <div class="timing">Ongoing</div>
+          <p>Continuous feedback loops. Cumulative intelligence applied. Architecture evolves with business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Pins &amp; Traceability</h2>
+    <p>Every strategic decision is tracked via the Pins ledger — providing a persistent, auditable record that feeds the 21:00 daily digest.</p>
+    <div>
+      <span class="pin-badge">SMARTY-ARCH-v1</span>
+      <span class="pin-badge">AR0A-ONEPAGER-v1</span>
+      <span class="pin-badge">AR0A-INTAKE-v1</span>
+      <span class="pin-badge">AR0A-SLIDES-v1</span>
+      <span class="pin-badge">MONKS40-BRAND-v1</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="monks-mark">MONKS</div>
+    <p>MarTech AI Transformation &amp; CX-Performance &middot; SMARTY Architecture v1.0</p>
+    <p>&copy; 2026 Monks. Confidential.</p>
+  </div>
+</footer>
+
+</body>
+</html>
